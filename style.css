@@ -28,6 +28,10 @@ html {
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
   }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
   
   a {
     text-decoration: none;
