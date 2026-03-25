@@ -500,13 +500,13 @@ html {
   
   .bar { background-color: var(--foreground); height: 100%; }
 
-.ticket-pass-card { background-color: rgba(247, 245, 242, 0.96); border: 1px solid rgba(212, 184, 134, 0.35); }
-.ticket-pass-name { color: var(--background); }
-.ticket-pass-subtitle { color: rgba(13, 13, 13, 0.7); }
+.ticket-pass-card { background-color: rgba(13, 13, 13, 0.9); border: 1px solid rgba(212, 184, 134, 0.35); }
+.ticket-pass-name { color: var(--foreground); }
+.ticket-pass-subtitle { color: var(--muted-foreground); }
 .ticket-pass-logo { background: rgba(13, 13, 13, 0.04); padding: 12px; }
-.barcode-container { background-color: var(--background); }
-.barcode { background-color: var(--foreground); }
-.bar { background-color: var(--background); }
+.barcode-container { background-color: var(--foreground); }
+.barcode { background-color: var(--background); }
+.bar { background-color: var(--foreground); }
 
   .merch-section {
     background-color: var(--foreground);
