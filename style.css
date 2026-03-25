@@ -800,7 +800,7 @@ html {
   }
 
   .section {
-    padding: 80px 0;
+    padding: 60px 0; /* Tighter section padding */
   }
 
   .title-lg {
@@ -810,7 +810,7 @@ html {
 
   .subtitle {
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 24px; /* Tighter subtitle margin */
   }
 
   .header {
@@ -872,10 +872,6 @@ html {
   .mobile-menu-toggle.open .bar:nth-child(2) {
     opacity: 0;
   }
-  .mobile-menu-toggle.open .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-
   .mobile-menu-toggle.open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
@@ -951,8 +947,17 @@ html {
     height: 600px;
   }
 
+  .hero-content {
+    margin-top: 60px; /* Tighter */
+  }
+
+  .hero-kicker {
+    margin-bottom: 24px; /* Tighter */
+  }
+
   .hero-title-main {
     font-size: 80px;
+    margin-bottom: 24px; /* Tighter */
   }
 
   /* Extra small devices (less than 480px) */
@@ -1002,6 +1007,14 @@ html {
     gap: 40px;
   }
 
+  .event-image-wrap {
+    margin-bottom: 24px; /* Tighter */
+  }
+
+  .event-location {
+    margin-bottom: 24px; /* Tighter */
+  }
+
   .event-title {
     font-size: 24px;
   }
@@ -1026,6 +1039,11 @@ html {
   .merch-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    margin-bottom: 40px; /* Tighter */
+  }
+
+  .merch-image-wrap {
+    margin-bottom: 24px; /* Tighter */
   }
 
   .merch-title {
@@ -1033,16 +1051,21 @@ html {
   }
 
   .about-section {
-    padding: 100px 0;
+    padding: 80px 0; /* Tighter */
+  }
+
+  .about-logo {
+    margin-bottom: 40px; /* Tighter */
   }
 
   .about-title {
-    font-size: 48px;
+    font-size: 40px; /* Harmonize with other titles */
+    margin-bottom: 24px; /* Tighter */
   }
 
   .about-text {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 32px; /* Tighter */
   }
 
   .gallery-header {
