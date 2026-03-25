@@ -810,30 +810,33 @@ html {
   }
 
   .header {
-    display: flex; /* Revert to flex for mobile */
-    justify-content: space-between; /* Distribute items */
-    align-items: center; /* Vertically align items */
-    padding: 24px 24px; /* Keep padding */
-    /* Remove gap and flex-direction column as items will be spaced by justify-content */
+    position: relative; /* Establishes a positioning context */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes hamburger and button to the edges */
+    height: 80px; /* Provides a stable layout height */
+    padding: 0 24px;
+  }
+
+  .header-brand {
+    position: absolute; /* Lifts the brand out of the flex flow */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* The definitive centering technique */
   }
 
   .header-nav {
     display: none; /* Hide desktop nav on mobile */
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
   }
 
   .header-action {
-    width: 100%;
+    width: auto; /* Allow the button to size to its content */
+    padding: 8px 12px; /* Significantly smaller for mobile */
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
     text-align: center;
-    padding: 12px 0;
-  }
-
-  .header-action {
-    width: 100%;
-    text-align: center;
-    padding: 12px 0;
+    flex-shrink: 0; /* Prevents the button from shrinking */
   }
 
   .mobile-menu-toggle {
@@ -843,8 +846,8 @@ html {
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 101; /* Ensure it's above other header elements */
-    position: relative;
+    z-index: 101;
+    flex-shrink: 0; /* Prevents the icon from shrinking */
   }
 
   .mobile-menu-toggle .bar {
