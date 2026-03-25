@@ -690,6 +690,7 @@ html {
   
   .footer-brand {
     font-size: 32px;
+    text-align: center; /* Center footer brand on mobile */
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -699,6 +700,7 @@ html {
   
   .footer-desc {
     font-size: 15px;
+    text-align: center; /* Center footer description on mobile */
     color: var(--muted-foreground);
     margin: 0 0 48px 0;
     max-width: 320px;
@@ -707,11 +709,13 @@ html {
   
   .social-links {
     display: flex;
+    justify-content: center; /* Center social links on mobile */
     gap: 24px;
   }
   
   .footer-heading {
     font-size: 13px;
+    text-align: center; /* Center footer heading on mobile */
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -721,6 +725,7 @@ html {
   
   .footer-links {
     display: flex;
+    align-items: center; /* Center footer links on mobile */
     flex-direction: column;
     gap: 20px;
   }
@@ -735,6 +740,7 @@ html {
   
   .newsletter-form {
     display: flex;
+    margin: 0 auto; /* Center the newsletter form container on mobile */
     width: 100%;
     border: 1px solid var(--border);
     margin-top: 32px;
@@ -832,6 +838,10 @@ html {
     }
     .hero {
       height: 500px;
+    }
+    .header-logo-img {
+      width: 36px;
+      height: 36px;
     }
   }
 
