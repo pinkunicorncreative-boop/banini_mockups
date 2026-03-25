@@ -810,9 +810,11 @@ html {
   }
 
   .header {
-    flex-direction: column;
-    padding: 24px 24px;
-    gap: 24px;
+    display: flex; /* Revert to flex for mobile */
+    justify-content: space-between; /* Distribute items */
+    align-items: center; /* Vertically align items */
+    padding: 24px 24px; /* Keep padding */
+    /* Remove gap and flex-direction column as items will be spaced by justify-content */
   }
 
   .header-nav {
