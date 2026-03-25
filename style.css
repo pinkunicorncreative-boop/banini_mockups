@@ -629,6 +629,15 @@ html {
     line-height: 1.1;
     margin: 0 0 40px 0;
   }
+
+  .about-title-sub {
+    display: block;
+    font-size: 0.5em; /* Relative to the parent .about-title size */
+    font-weight: 300; /* Light weight */
+    color: var(--muted-foreground);
+    letter-spacing: normal; /* Resetting the tight letter-spacing */
+    margin-top: 16px;
+  }
   
   .about-text {
     font-size: 20px;
